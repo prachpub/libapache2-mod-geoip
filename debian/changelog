@@ -1,0 +1,77 @@
+libapache2-mod-geoip (1.2.8-1) experimental; urgency=low
+
+  * New maintainer. (Closes: #670999)
+  * New upstream release. (Closes: #666795)
+    - Support Aapche 2.4
+  * Adapt "sourceful transition towards Apache 2.4" patch from Arno Töll
+    - Replace apache2-threaded-dev with apache2-dev in Build-Depends.
+    - Drop apache2.2-common in Depends.
+    - Drop libapache2-mod-geoip.{install,postinst,postrm}.
+    - Add libapache2-mod-geoip.apache2.
+    - Add "dh_apache2" in rules.
+  * Bump to Standards-Version 3.9.4, no changes needed.
+
+ -- Prach Pongpanich <prachpub@gmail.com>  Sat, 09 Feb 2013 12:02:30 +0700
+
+libapache2-mod-geoip (1.2.7-1) unstable; urgency=low
+
+  * New upstream release (Closes: #655492)
+    - Includes support for newer APIs from upstream
+    - Includes IPv6 support, as a result, now requires GeoIP >= 1.4.8
+  * Bump to standards version 3.9.3.1
+    - Change to debian/rules to add build-arch/build-indep rules
+  * Remove reference in Description: to only working with Apache 2.x, as
+     Debian only ships one version of Apache now
+
+ -- Nigel Jones <dev@nigelj.com>  Thu, 29 Mar 2012 11:25:43 +1300
+
+libapache2-mod-geoip (1.2.5-2) unstable; urgency=low
+
+  * Update package for review
+    - Correct changelog format (for 1.2.5-1)
+    - Change location of Homepage in debian/control
+    - Alter Section tag to match ftpmaster's override
+  * Update build-depends to GeoIP >= 1.4.3
+  * Enable GeoIPDBFile (geoip.conf) by default
+
+ -- Nigel Jones <dev@nigelj.com>  Fri, 21 May 2010 11:02:39 +1200
+
+libapache2-mod-geoip (1.2.5-1) unstable; urgency=low
+
+  * New maintainer (Closes: #578179)
+  * Update package to latest upstream (Closes: #556904)
+    - fixes "Causes intermittent segfaults." (Closes: #497560)
+  * Change description from Apache 2.0 to 2.x as the module will work
+    with newer versions of Apache (Closes: #400980)
+  * Packaging: Convert package to debhelper v7 and in compliance with current
+     packaging guidelines
+    - Updated 'compat' version to 7
+    - Switched to dpkg-source v3
+
+ -- Nigel Jones <dev@nigelj.com>  Thu, 20 May 2010 21:08:01 +1200
+
+libapache2-mod-geoip (1.1.8-2) unstable; urgency=low
+
+  * new apache version 2.2 (Closes: #391788)
+
+ -- Michael Mende <debian@menole.net>  Sun, 08 Oct 2006 18:44:02 +0200
+
+libapache2-mod-geoip (1.1.8-1) unstable; urgency=low
+
+  * new upstream version, includes patch #357387
+  * build depends no longer on dpatch
+
+ -- Michael Mende <debian@menole.net>  Sat, 06 May 2006 11:44:02 +0200
+
+libapache2-mod-geoip (1.1.7-2) unstable; urgency=low
+
+  * patch by dann frazier <dannf@hp.com> (Closes: #357387) 
+  * build depends now on dpatch
+
+ -- Michael Mende <debian@menole.net>  Fri, 17 Mar 2006 18:24:20 +0200
+
+libapache2-mod-geoip (1.1.7-1) unstable; urgency=low
+
+  * Initial release (Closes: #297842)
+
+ -- Michael Mende <debian@menole.net>  Sun, 05 Feb 2006 18:24:20 +0200

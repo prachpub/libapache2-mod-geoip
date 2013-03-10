@@ -1,0 +1,18 @@
+Source: libapache2-mod-geoip
+Section: httpd
+Priority: optional
+Maintainer: Prach Pongpanich <prachpub@gmail.com>
+Build-Depends: apache2-dev, debhelper (>= 7), libgeoip-dev (>=1.4.8)
+Standards-Version: 3.9.3.4
+Homepage: http://www.maxmind.com/app/mod_geoip
+
+Package: libapache2-mod-geoip
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: GeoIP support for apache2
+ This is an apache2 module for finding the country that a web request
+ originated from. It uses the GeoIP library and database to perform
+ the lookup. The module allows manipulation of client requests from within
+ Apache based on the country of origin.
+ .
+ This module only works on Apache 2 servers.
