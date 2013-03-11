@@ -1,0 +1,2 @@
+To generate a tarball for a new upstream release, change the variables VERSION in debian/rules and then run
+make -f debian/rules get-orig-source
