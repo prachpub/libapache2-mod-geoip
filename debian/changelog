@@ -13,7 +13,7 @@ libapache2-mod-geoip (1.2.8-1) experimental; urgency=low
     - Convert debian/rules to debhelper-7 style
     - Use dh $@ --with apache2 in d/rules
     - Remove package prefix libapache2-mod-geoip.{docs,dirs,examples} 
-  * Add get-orig-source in debian/rules
+  * Add get-orig-source in debian/rules and README.source
   * Update debian/watch and explain why doesn't work
   * Bump to Standards-Version 3.9.4, no changes needed
 
