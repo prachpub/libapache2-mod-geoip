@@ -13,3 +13,11 @@ override_dh_auto_build:
 override_dh_auto_test:
 
 override_dh_auto_install:
+
+# Package version to use when building .orig.tar.gz
+VERSION = 1.2.8
+URL =  http://www.maxmind.com/download/geoip/api/mod_geoip2/mod_geoip2-latest.tar.gz
+
+get-orig-source:
+	wget -N $(URL)
+	mv mod_geoip2-latest.tar.gz ../libapache2-mod-geoip_$(VERSION).orig.tar.gz
