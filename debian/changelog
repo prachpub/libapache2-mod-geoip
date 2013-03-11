@@ -2,16 +2,20 @@ libapache2-mod-geoip (1.2.8-1) experimental; urgency=low
 
   * New maintainer. (Closes: #670999)
   * New upstream release. (Closes: #666795)
-    - Support Aapche 2.4
+    - Support Apache 2.4
   * Adapt "sourceful transition towards Apache 2.4" patch from Arno Töll
-    - Replace apache2-threaded-dev with apache2-dev in Build-Depends.
-    - Drop apache2.2-common in Depends.
-    - Drop libapache2-mod-geoip.{install,postinst,postrm}.
-    - Add libapache2-mod-geoip.apache2.
-    - Add "dh_apache2" in rules.
-  * Bump to Standards-Version 3.9.4, no changes needed.
+    - Replace apache2-threaded-dev with apache2-dev in Build-Depends
+    - Drop apache2.2-common in Depends
+    - Drop libapache2-mod-geoip.{install,postinst,postrm}
+    - Add debian/apache2 file
+  * Update copyright file to version 1.0 format
+  * Bump debhelper compat to level 9
+    - Convert debian/rules to debhelper-7 style
+    - Use dh $@ --with apache2 in d/rules
+    - Remove package prefix libapache2-mod-geoip.{docs,dirs,examples} 
+  * Bump to Standards-Version 3.9.4, no changes needed
 
- -- Prach Pongpanich <prachpub@gmail.com>  Sat, 09 Feb 2013 12:02:30 +0700
+ -- Prach Pongpanich <prachpub@gmail.com>  Mon, 11 Mar 2013 10:42:30 +0700
 
 libapache2-mod-geoip (1.2.7-1) unstable; urgency=low
 
