@@ -12,7 +12,8 @@ libapache2-mod-geoip (1.2.8-1) experimental; urgency=low
   * Bump debhelper compat to level 9
     - Convert debian/rules to debhelper-7 style
     - Use dh $@ --with apache2 in d/rules
-    - Remove package prefix libapache2-mod-geoip.{docs,dirs,examples} 
+    - Remove package prefix libapache2-mod-geoip.{docs,dirs,examples}, 
+      it is useless when build a single binary package
   * Add get-orig-source in debian/rules and README.source
   * Update debian/watch and explain why doesn't work
   * Add Vcs-* fields in debian/control
