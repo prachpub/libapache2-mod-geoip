@@ -1,6 +1,6 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: mod_geoip2
-Source: http://dev.maxmind.com/geoip/mod_geoip2
+Source: http://www.maxmind.com/app/mod_geoip
 
 Files: *
 Copyright: 2004, MaxMind LLC.
