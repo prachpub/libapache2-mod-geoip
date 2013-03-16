@@ -6,6 +6,8 @@ Build-Depends: apache2-dev,
                debhelper (>= 9),
                libgeoip-dev (>=1.4.8)
 Standards-Version: 3.9.4
+Vcs-Git: git://github.com/prachpub/libapache2-mod-geoip
+Vcs-Browser: https://github.com/prachpub/libapache2-mod-geoip
 Homepage: http://www.maxmind.com/app/mod_geoip
 
 Package: libapache2-mod-geoip
