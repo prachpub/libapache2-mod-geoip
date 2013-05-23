@@ -1,3 +1,10 @@
+libapache2-mod-geoip (1.2.8-2) unstable; urgency=low
+
+  * Upload to unstable
+  * Add Vcs-* fields (forgot in previous upload)
+
+ -- Prach Pongpanich <prachpub@gmail.com>  Thu, 23 May 2013 22:24:51 +0700
+
 libapache2-mod-geoip (1.2.8-1) experimental; urgency=low
 
   * New maintainer. (Closes: #670999)
