@@ -14,6 +14,7 @@ Package: libapache2-mod-geoip
 Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends}
+Recommends: geoip-database
 Description: GeoIP support for apache2
  This is an apache2 module for finding the country that a web request
  originated from. It uses the GeoIP library and database to perform
